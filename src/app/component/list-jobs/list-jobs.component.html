@@ -1,0 +1,11 @@
+
+<h1>Liste des offres d'emplois</h1>
+<ul *ngFor="let job of jobs$ | async">
+    <ul>
+      <h3><a routerLink="{{ job.id }}">{{job.Title}}</a> - {{job.DateOfPublish}}</h3>
+      <li>{{job.Description}}</li>
+       <li>{{job.Salary}}</li>
+   </ul>
+  </ul>
+  <hr>
+<app-add-jobs></app-add-jobs>

@@ -1,0 +1,13 @@
+<h1>{{titleDetailJobs}}</h1>
+
+<ul *ngIf="selectedJob | async as job">
+    <h3>{{job.Title}} - {{job.DateOfPublish}}</h3>
+    <li>{{job.Description}}</li>
+    <li>{{job.Salary}}</li>
+    <li>{{job.Location}}</li>
+    
+</ul>
+
+<h2><a href="">Retour à la liste</a></h2>
+
+<router-outlet></router-outlet>
